@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-googledrive-server",
+  "version": "1.0.0",
+  "description": "A simple nodejs server that writes stuff to Google Sheets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "start": "babel-watch src/index.js"
+  },
+  "author": "Gregoire Liglet",
+  "license": "MIT",
+  "dependencies": {
+    "google-spreadsheet": "^2.0.7",
+    "multi-node": "^0.2.3",
+    "net": "^1.0.2",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-core": "^6.26.3",
+    "babel-watch": "^7.0.0"
+  }
+}
